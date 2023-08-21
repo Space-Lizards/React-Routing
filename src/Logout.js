@@ -1,17 +1,14 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
-function Logout() {
+const Logout = () => {
   return (
     <div>
-      <Helmet>
-        <title>Authorize</title>
-      </Helmet>
-      <div>
-        <h3>Добро пожаловать</h3>
-      </div>
+      <h3>Добро пожаловать</h3>
+      <Link to="/Login">Авторизация</Link>
+      <Link to="/Registration">Регистрация</Link>
     </div>
   );
-}
+};
 
 export default Logout;
