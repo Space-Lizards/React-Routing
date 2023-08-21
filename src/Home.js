@@ -1,10 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
   return (
     <div>
-      <h1>Добро пожаловать на Главную страницу</h1>
-      {/* Здесь можно разместить контент главной страницы */}
+      <Helmet>
+        <title>Main</title>
+      </Helmet>
+      <div>
+        <h3>Это главная</h3>
+      </div>
     </div>
   );
 };
